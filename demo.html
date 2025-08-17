@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        // Function declaration
+        function add7(num) {
+            return num + 7;
+        }
+
+        // One line arrow function
+        let multiply = (a, b) => a * b;
+
+        // Multi line arrow function
+        let capitalize = (str) => {
+            let first = str.charAt(0);
+            let remaining = str.slice(1);
+            return first.toUpperCase() + remaining.toLowerCase();
+        }
+
+        // Another arrow function
+        let lastLetter = str => str.charAt(str.length - 1);
+
+        console.log(add7(3));
+        console.log(multiply(5, 4));
+        console.log(capitalize("hElLO WoRld"));
+        console.log(lastLetter("Cat"));
+
+    </script>
+
+</body>
+
+</html>
